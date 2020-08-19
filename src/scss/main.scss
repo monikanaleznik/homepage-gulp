@@ -1,6 +1,6 @@
 @import "_normalize";
 @import "_variables";
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 html {
   box-sizing: border-box;
@@ -19,6 +19,7 @@ body {
     rgba(0, 212, 255, 1) 100%
   );
   color: #fff;
+  font-family: 'Lato';
 } 
 
 .site-header {
@@ -33,6 +34,7 @@ body {
 }
 
 .navigation {
+  font-family: 'Roboto';
   &__link {
     color: #1a936f;
   }
