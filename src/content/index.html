@@ -1,40 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
-
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
-
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
-
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
-
-    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
 
+  <body>
+    <header class="site-header">
+      <nav class="navigation">
+        <ul class="navigation__list navigation__list--js">
+          <li class="navigation-item">
+            <a class="navigation__link" href="index.html">Strona główna</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation__link" href="podstrona.html">Podstrona</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation__link" href="dzierganie.html">Dzierganie</a>
+					</li>
+					<li class="navigation-item">
+            <a class="navigation__link" href="podstrona.html">Podstrona</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation__link" href="dzierganie.html">Dzierganie</a>
+					</li>
+					<li class="navigation-item">
+            <a class="navigation__link" href="podstrona.html">Podstrona</a>
+          </li>
+				</ul>
+			</nav>
+			<button class="navigation__switcher navigation__switcher--js" aria-label="Otwórz menu">=</button>
+    </header>
+
+    <main id="top" class="main">
+      <header>
+        <h1 class="main__header main__header--js">
+          Maciej Korsan - Strona domowa - pozdro!
+				</h1>
+				<button class="header__button header__button--js">Zmień treść nagłówka</button>
+      </header>
+
+      <section class="about">
+        <div class="about__box">Co ten frontend?</div>
+        <img src="assets/img/monika.png" alt="Monika" class="about__picture" />
+        <div class="boxTest">Co ten frontend?</div>
+        <h2 class="about__header">Kim jestem?</h2>
+        <p class="about__paragraph about__paragraph--js">
+          Na co dzień uczę wspaniałych ludzi tajnej sztuki frontendu i pracuje w
+          firmie o ciężko zapisywalnej nazwie: EYEDEA. Poza tym bardzo lubię
+          robić zdjęcia i latać dronem. Witam Cię na mojej stronie domowej, mam
+          nadzieję, że znajdziesz tu trochę przydatnych rzeczy.
+          <br />
+          <a class="about__link" href="#pamietniczek"
+            >Przejdź do pamiętniczka</a
+          >
+        </p>
+        <p class="about__paragraph about__paragraph--color">
+          Tęstuję modyfikator
+        </p>
+
+        <section class="hobby">
+          <h3>Moje hobby</h3>
+          <ul class="hobby__list">
+            <li>Nagrywanie szkolenia</li>
+            <li>dronowanie</li>
+            <li>spanie</li>
+            <li>puzzle</li>
+          </ul>
+        </section>
+
+        <section class="Plan">
+          <h3>Mój plan</h3>
+          <ol>
+            <li>Wstać</li>
+            <li>prysznic</li>
+            <li>kawa</li>
+          </ol>
+        </section>
+      </section>
+      <section class="diary" id="pamietniczek">
+        <h2 class="diary__header">Pamiętniczek</h2>
+        <div class="grid">
+          <section>
+            <h3 class="diary__third__header diary__header--special">
+              Jak stworzyć prawidłowego HTML-a?
+            </h3>
+            <p class="diary__paragraph">
+              Tworzenie zgodnie ze standardami HTML-a to sztuka, którą do
+              perfekcji opanowało niewielu. Jeśli chcesz stać się częścią tej
+              grupy, musiszz wykazać się otwartą głową i dużą ilością wolnego
+              czasu...<br />
+              <a class="diary__link" href="podstrona.html"
+                >Przejdź do artykułu o pisaniu HTML-a</a
+              >
+            </p>
+          </section>
+          <section class="video">
+            <div class="video--js">sialala</div>
+            <h3 class="video__third__header">
+              Czy nagrywanie szkolenia to prosta sprawa?
+            </h3>
+            <p class="video__paragraph">
+              Na początku myślałem, że całe szkolenie nagram w 2 tygodnie (o ja
+              naiwny!). Samo planowanie rzeczy zajęłło dużo więcej! Na szczęście
+              dzięki wsparciu bliskich i sporej motywacji udało mi się wytworzyć
+              schemat nagrywania, który każdego dnia przybliża mnie do
+              skończenia pracy.
+            </p>
+          </section>
+          <section>
+            <h3 class="diary__third__header">
+              Jak stworzyć prawidłowego HTML-a?
+            </h3>
+            <p class="diary__paragraph">
+              Tworzenie zgodnie ze standardami HTML-a to sztuka, którą do
+              perfekcji opanowało niewielu. Jeśli chcesz stać się częścią tej
+              grupy, musiszz wykazać się otwartą głową i dużą ilością wolnego
+              czasu...<br />
+              <a class="diary__link" href="podstrona.html"
+                >Przejdź do artykułu o pisaniu HTML-a</a
+              >
+            </p>
+          </section>
+          <section class="video">
+            <div class="video--js">sialala</div>
+            <h3 class="video__third__header">
+              Czy nagrywanie szkolenia to prosta sprawa?
+            </h3>
+            <p class="video__paragraph">
+              Na początku myślałem, że całe szkolenie nagram w 2 tygodnie (o ja
+              naiwny!). Samo planowanie rzeczy zajęłło dużo więcej! Na szczęście
+              dzięki wsparciu bliskich i sporej motywacji udało mi się wytworzyć
+              schemat nagrywania, który każdego dnia przybliża mnie do
+              skończenia pracy.
+            </p>
+          </section>
+          <section>
+            <h3 class="diary__third__header">
+              Jak stworzyć prawidłowego HTML-a?
+            </h3>
+            <p class="diary__paragraph">
+              Tworzenie zgodnie ze standardami HTML-a to sztuka, którą do
+              perfekcji opanowało niewielu. Jeśli chcesz stać się częścią tej
+              grupy, musiszz wykazać się otwartą głową i dużą ilością wolnego
+              czasu...<br />
+              <a class="diary__link" href="podstrona.html"
+                >Przejdź do artykułu o pisaniu HTML-a</a
+              >
+            </p>
+          </section>
+          <section class="video">
+            <div class="video--js">sialala</div>
+            <h3 class="video__third__header">
+              Czy nagrywanie szkolenia to prosta sprawa?
+            </h3>
+            <p class="video__paragraph">
+              Na początku myślałem, że całe szkolenie nagram w 2 tygodnie (o ja
+              naiwny!). Samo planowanie rzeczy zajęłło dużo więcej! Na szczęście
+              dzięki wsparciu bliskich i sporej motywacji udało mi się wytworzyć
+              schemat nagrywania, który każdego dnia przybliża mnie do
+              skończenia pracy.
+            </p>
+          </section>
+        </div>
+      </section>
+      <section class="glossary">
+        <h2>Potwory</h2>
+        <dl>
+          <dt>CSS</dt>
+          <dd>style (to co widzisz jak jest ładne albo brzydkie)</dd>
+          <dt>HTML</dt>
+          <dd>treść + szkielet strony</dd>
+          <dt>JavaScript</dt>
+          <dt>Es6</dt>
+          <dd>rzezcy, których teraz się uczę</dd>
+        </dl>
+      </section>
+
+      <section clas="data>">
+        <h2>To jest tabelka</h2>
+        <table class="table">
+          <caption>
+            Oceny z pierwszego semestru z przedmiotu WTF
+          </caption>
+          <thead>
+            <tr>
+              <th>Imię nazwisko</th>
+              <th>Cena</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monika Naleźnik</td>
+              <td>6</td>
+              <td>6.03.2020</td>
+            </tr>
+            <tr>
+              <td>Marian Marian</td>
+              <td>5</td>
+              <td>4.03.2020</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <a href="#top" class="footer">Na górę</a>
+      Strona domowa Maćka Korsana, wszystkie treści są efektem tworzenia
+      szkolenia WTF: co ten frontend.
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>

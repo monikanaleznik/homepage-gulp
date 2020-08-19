@@ -10,7 +10,176 @@ html {
   box-sizing: inherit;
 }
 
+
 body {
-  color: $yellow;
-  background: $violet;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: #fff;
+}
+
+.site-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 16px;
+	background: #fff;
+	z-index: 10;
+}
+
+.navigation {
+  &__link {
+    color: #1a936f;
+  }
+  &__list {
+    list-style: none;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  &-item {
+    display: block;
+    margin: 0 16px;
+  }
+}
+
+.main {
+  width: 500px;
+  max-width: 700px;
+  margin: 32px auto;
+  padding-top: 50px;
+  &__header {
+    color: #ff6700;
+    margin-bottom: 48px;
+    &--red {
+      color: darkred;
+    }
+  }
+}
+
+.diary {
+  &__link {
+    color: #1a936f;
+  }
+  &__paragraph {
+    padding: 16px;
+  }
+  clear: both;
+  &__third__header {
+    color: #0496ff;
+    &::before {
+      content: " - ";
+      border-radius: 40%;
+      width: 20px;
+      height: 20px;
+      background-color: darksalmon;
+    }
+    &:not(.diary__header--special) {
+      background-color: goldenrod;
+    }
+  }
+}
+
+.about__header,
+.diary__header {
+  color: #1460aa;
+}
+
+.video {
+  &__paragraph {
+    padding: 16px;
+  }
+  &__third__header {
+    color: #0496ff;
+  }
+}
+
+.about {
+  &__box {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 10px solid red;
+    position: sticky;
+    top: 0;
+    left: 50%;
+  }
+  &__header {
+    color: #1460aa;
+  }
+  &__link {
+    color: #1a936f;
+  }
+  &__paragraph {
+    padding: 16px;
+    &--color {
+      color: #ff6700;
+    }
+  }
+  &__picture {
+    width: 100%;
+    max-width: 100px;
+    display: block;
+    float: left;
+    margin: 0 16px 16px 0;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: #1a936f;
+  text-decoration: none;
+}
+
+.hobby__list {
+  list-style: none;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+@media (min-width: 641px) {
+	.navigation__switcher {
+		display: none;
+	}
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+    background-color: tomato;
+	}
+  .navigation__list {
+		flex-direction: column;
+		display: none;
+	}
+	.navigation__list--visable {
+		display: flex;
+	}
+	.navigation-item {
+		margin: 16px;
+	}
+	.navigation__switcher {
+		border: none;
+		background: none;
+		position: absolute;
+		right: 16px;
+		top: 16px;
+	}
+	.site-header {
+		min-height: 48px;
+	}
 }
