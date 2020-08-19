@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -320,7 +321,8 @@ body {
   background: -webkit-linear-gradient(left, #020024 0%, #090979 35%, #00d4ff 100%);
   background: -o-linear-gradient(left, #020024 0%, #090979 35%, #00d4ff 100%);
   background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
-  color: #fff; }
+  color: #fff;
+  font-family: 'Lato'; }
 
 .site-header {
   position: fixed;
@@ -333,22 +335,22 @@ body {
   background: #fff;
   z-index: 10; }
 
-.navigation__link {
-  color: #1a936f; }
-
-.navigation__list {
-  list-style: none;
-  padding: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.navigation-item {
-  display: block;
-  margin: 0 16px; }
+.navigation {
+  font-family: 'Roboto'; }
+  .navigation__link {
+    color: #1a936f; }
+  .navigation__list {
+    list-style: none;
+    padding: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .navigation-item {
+    display: block;
+    margin: 0 16px; }
 
 .main {
   width: 500px;
