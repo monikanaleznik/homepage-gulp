@@ -1,4 +1,8 @@
-# wtf-gulp-starter
+![Homepage image](github/homepage-screen.png)
+
+# Mój homepage
+
+Zapraszam na moją stronę: [Strona homepage Moniki](https://monikanaleznik.github.io/homepage-gulp/)
 
 `npm install -g gulp-cli`
 
