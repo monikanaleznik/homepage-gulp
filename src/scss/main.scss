@@ -12,13 +12,8 @@ html {
 
 
 body {
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  color: #fff;
+  background-color: #f3f3f3;
+  color: #333;
   font-family: 'Lato';
 } 
 
@@ -80,9 +75,6 @@ body {
       width: 20px;
       height: 20px;
       background-color: darksalmon;
-    }
-    &:not(.diary__header--special) {
-      background-color: goldenrod;
     }
   }
 }
