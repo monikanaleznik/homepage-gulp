@@ -124,3 +124,36 @@ navigationSwitcher.addEventListener('click', (e) => {
     const navigationList = document.querySelector('.navigation__list--js');
     navigationList.classList.toggle('navigation__list--visable');
 });
+
+
+//pętle
+for (let i = 0; i < 100; i++) {
+    const a = 'test';
+    if (a.length === 4) {
+    console.log(`${i+1} powtórzenie`);
+    }
+}
+
+for (let face of faces) {
+  console.log(face);
+}
+
+let a = 10;
+while (a > 0) {
+  a--;
+  console.log(a)
+}
+
+let b = 9;
+do {
+  b = b + 3;
+  console.log(b);
+} while (b < 9) 
+
+const person = {
+  name: 'maciek',
+  age: 31
+}
+for (let property in person) {
+  console.log(`${property}: ${person[property]}`);
+}
